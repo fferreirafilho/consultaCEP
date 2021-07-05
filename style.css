@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.199);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.gridContainer {
+  width: 850px;
+  margin: 0 auto;
+  background: rgba(184, 184, 184, 0.247);
+  border-radius: 5px;
+}
+
+form + form {
+  margin-top: 40px;
+}
+
+img {
+  display: block;
+  width: 250px;
+  padding-top: 30px;
+  margin: 20px auto;
+}
+
+.cep {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input {
+  height: 25px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.301);
+}
+
+input:disabled {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  text-align: center;
+}
+
+button {
+  height: 30px;
+  width: 120px;
+  background: greenyellow;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button i {
+  margin-right: 10px;
+}
+
+.inputcep {
+  grid-area: inputcep;
+}
+
+.labelcep {
+  grid-area: labelcep;
+}
+
+.inputlogradouro {
+  grid-area: inputlogradouro;
+}
+
+.labellogradouro {
+  grid-area: labellogradouro;
+}
+
+.inputcomplemento {
+  grid-area: inputcomplemento;
+}
+
+.labelcomplemento {
+  grid-area: labelcomplemento;
+}
+
+.inputbairro {
+  grid-area: inputbairro;
+}
+
+.labelbairro {
+  grid-area: labelbairro;
+}
+.inputlocalidade {
+  grid-area: inputlocalidade;
+}
+
+.labellocalidade {
+  grid-area: labellocalidade;
+}
+
+.inputuf {
+  grid-area: inputuf;
+}
+
+.labeluf {
+  grid-area: labeluf;
+}
+
+.resultado {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "labelcep labellogradouro labelcomplemento"
+    "inputcep inputlogradouro inputcomplemento"
+    "labelbairro labellocalidade labeluf"
+    "inputbairro inputlocalidade inputuf";
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+  <title>Consultar CEP</title>
+</head>
+
+<body>
+  <div class="gridContainer">
+    <img src="download.png" alt="">
+    <form class="cep">
+      <input type="text" id="cep1" placeholder="Digite Seu Cep">
+      <button class="btn"><i class="fas fa-search"></i>Pesquisar</button>
+    </form>
+
+    <form class="resultado">
+      <label class="labelcep" for="cep2">CEP</label>
+      <input value="" class="inputcep" type="text" id="cep2" disabled="disabled">
+
+      <label class="labellogradouro" for="logradouro">Logradouro</label>
+      <input value="" class="inputlogradouro" type="text" id="logradouro" disabled="disabled">
+
+      <label class="labelcomplemento" for="complemento">Complemento</label>
+      <input value="" class="inputcomplemento" type="text" id="complemento" disabled="disabled">
+
+      <label class="labelbairro" for="bairro">Bairro</label>
+      <input value="" class="inputbairro" type="text" id="bairro" disabled="disabled">
+
+      <label class="labellocalidade" for="localidade">Cidade</label>
+      <input value="" class="inputlocalidade" type="text" id="localidade" disabled="disabled">
+
+      <label class="labeluf" for="uf">Estado</label>
+      <input value="" class="inputuf" type="text" id="uf" disabled="disabled">
+
+    </form>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
